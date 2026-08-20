@@ -31,7 +31,7 @@ class StartScreen extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // الأشكال الخلفية الشفافة (Watermarks)
+
             Positioned(
               top: 145,
               left: -75,
@@ -49,13 +49,13 @@ class StartScreen extends StatelessWidget {
               ),
             ),
 
-            // المحتوى 
+
             SafeArea(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Column(
                   children: [
-                    const Spacer(flex: 2), // مسافة فوق العنوان
+                    const Spacer(flex: 2), 
                     const Text(
                       "Tix-Tac-Toe",
                       style: TextStyle(
@@ -66,7 +66,7 @@ class StartScreen extends StatelessWidget {
                       ),
                     ),
                     
-                    const Spacer(flex: 5), // المسافة اللي بتزق الزراير لتحت
+                    const Spacer(flex: 5), 
                     
                     const Text(
                       "Pick who goes first?",
@@ -79,45 +79,45 @@ class StartScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     
-                    // جروب الزراير 
+
                     SizedBox(
                       width: 343,
                       height: 164,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          // زرار الـ X
+
                           GestureDetector(
                             onTap: () => _navigateToGame(context, 'X'),
                             child: Container(
-                              width: 164, // مقاس البوكس الأبيض
-                              height: 164, // مقاس البوكس الأبيض
+                              width: 164, 
+                              height: 164, 
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(40),
                               ),
                               child: Center(
                                 child: CustomShapes.buildX(
-                                  size: 86, // مقاس الـ X بالظبط زي الفيجما
+                                  size: 86,
                                   color: const Color(0xFFFF4B4B)
                                 ), 
                               ),
                             ),
                           ),
                           
-                          // زرار الـ O
+
                           GestureDetector(
                             onTap: () => _navigateToGame(context, 'O'),
                             child: Container(
-                              width: 164, // مقاس البوكس الأبيض
-                              height: 164, // مقاس البوكس الأبيض
+                              width: 164, 
+                              height: 164, 
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(40),
                               ),
                               child: Center(
                                 child: CustomShapes.buildO(
-                                  size: 86, // مقاس الـ O بالظبط زي الفيجما
+                                  size: 86, 
                                   color: const Color(0xFF65AF53)
                                 ), 
                               ),
@@ -127,7 +127,7 @@ class StartScreen extends StatelessWidget {
                       ),
                     ),
                     
-                    const SizedBox(height: 60), // مسافة ثابتة من تحت
+                    const SizedBox(height: 60), 
                   ],
                 ),
               ),

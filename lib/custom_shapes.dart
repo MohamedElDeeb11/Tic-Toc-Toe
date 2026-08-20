@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class CustomShapes {
-  // رسم حرف X سميك زي الصورة
   static Widget buildX({required double size, Color color = Colors.white}) {
     return SizedBox(
       width: size,
@@ -12,7 +11,7 @@ class CustomShapes {
           Transform.rotate(
             angle: 3.14159 / 4,
             child: Container(
-              width: size * 0.20, // زودنا السمك هنا
+              width: size * 0.20, 
               height: size * 0.95,
               decoration: BoxDecoration(
                 color: color,
@@ -23,7 +22,7 @@ class CustomShapes {
           Transform.rotate(
             angle: -3.14159 / 4,
             child: Container(
-              width: size * 0.20, // زودنا السمك هنا
+              width: size * 0.20, 
               height: size * 0.95,
               decoration: BoxDecoration(
                 color: color,
@@ -36,7 +35,7 @@ class CustomShapes {
     );
   }
 
-  // رسم الدائرة O سميكة زي الصورة
+
   static Widget buildO({required double size, Color color = Colors.white}) {
     return Container(
       width: size,
@@ -45,7 +44,7 @@ class CustomShapes {
         shape: BoxShape.circle,
         border: Border.all(
           color: color,
-          width: size * 0.20, // زودنا السمك هنا
+          width: size * 0.20, 
         ),
       ),
     );
