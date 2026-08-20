@@ -57,7 +57,7 @@ class StartScreen extends StatelessWidget {
                   children: [
                     const Spacer(flex: 2), 
                     const Text(
-                      "Tix-Tac-Toe",
+                      "Tic-Tac-Toe",
                       style: TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.w900,
