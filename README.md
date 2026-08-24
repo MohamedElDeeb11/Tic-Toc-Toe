@@ -24,6 +24,6 @@ flutter run
 
 ## 👨‍💻 Author
 
-**Mohamed Eladawi**
+**Mohamed ElDeeb11**
 
-🔗 [GitHub](https://github.com/meladawi10)
+🔗 [GitHub](https://github.com/MohamedElDeeb11)
